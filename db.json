@@ -1,1 +1,39 @@
-bok
+{
+  "blogPosts": [
+    {
+      "id": "101",
+      "title": "Embracing Minimalist Decor",
+      "author": "Jane Doe",
+      "datePublished": "2023-10-05",
+      "text": "Minimalist decor is not just about having less; it's about making room for more of what matters. In this post, we explore the beauty and simplicity of minimalist design and how you can incorporate it into your home to create a space that is both functional and serene."
+    },
+    {
+      "id": "102",
+      "title": "Small Space, Big Impact",
+      "author": "John Smith",
+      "datePublished": "2023-10-12",
+      "text": "Living in a small space can be a challenge, but with the right decor strategies, it can also be incredibly rewarding. Discover tips for maximizing your area and creating an inviting atmosphere that defies its size."
+    },
+    {
+      "id": "103",
+      "title": "Indoor Plants for Lively Interiors",
+      "author": "Alice Johnson",
+      "datePublished": "2023-10-20",
+      "text": "Indoor plants can transform your home from a lifeless enclosure to a vibrant living space. Learn about the best plants to decorate with and how to care for them in this comprehensive guide to greening your interiors."
+    },
+    {
+      "id": "104",
+      "title": "Mixing Vintage with Modern",
+      "author": "David Lee",
+      "datePublished": "2023-10-27",
+      "text": "Vintage pieces add a touch of nostalgia and uniqueness to any room. This post will guide you through the process of selecting the perfect antique items to complement your modern decor, blending old and new harmoniously."
+    },
+    {
+      "id": "105",
+      "title": "The Power of Colorful Accents",
+      "author": "Emily Carter",
+      "datePublished": "2023-11-03",
+      "text": "Adding a dash of color can entirely change the ambiance of a room. We will delve into how to choose and where to place colorful accents to elevate your home's decor without overwhelming the existing design."
+    }
+  ]
+}
