@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../../styles/Auth.module.css'; // Osigurajte da je ovo ispravna putanja
+const API_ENDPOINT = process.env.REACT_APP_BACKEND_URL || 'http://localhost:3000';
 
 function RegisterPage() {
   const [username, setUsername] = useState('');
@@ -7,11 +8,37 @@ function RegisterPage() {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    // Implementirajte logiku registracije
-    console.log('Registrirani korisnik:', username, email, password, confirmPassword);
+  
+    // Simple validation
+    if (password !== confirmPassword) {
+      alert('Passwords do not match!');
+      return;
+    }
+  
+    try {
+      const response = await fetch(`${API_ENDPOINT}/api/register`, { // Replace with your server URL if different
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, email, password }), // Do not send the password in plain text in a real app
+      });
+  
+      if (!response.ok) {
+        throw new Error('Failed to register');
+      }
+  
+      const data = await response.json();
+      console.log('Registered user with ID:', data.userId);
+      // Redirect or show success message
+    } catch (error) {
+      console.error('Registration error:', error);
+      // Handle errors, show messages, etc.
+    }
   };
+  
 
   return (
     <div className={styles.authContainer}>

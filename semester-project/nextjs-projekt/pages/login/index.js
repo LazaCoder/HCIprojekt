@@ -1,14 +1,43 @@
 import React, { useState } from 'react';
-import styles from '../../styles/Auth.module.css'; // Osigurajte da je ovo ispravna putanja
+import { useRouter } from 'next/router';
+import { useUser } from '../../contexts/UserContext'; // Adjust the import path as needed
+import styles from '../../styles/Auth.module.css'; // Ensure the path to your CSS module is correct
 
 function LoginPage() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const router = useRouter();
+  const { setIsLoggedIn } = useUser(); // Use the setIsLoggedIn function from UserContext
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    // Implementirajte logiku prijave
-    console.log('Prijavljeni korisnik:', username, password);
+    try {
+      const response = await fetch('/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+      });
+      const data = await response.json();
+
+      if (response.ok) {
+        console.log('Login successful:', data);
+
+        // Update the logged-in state and set localStorage
+        setIsLoggedIn(true);
+        localStorage.setItem('isLoggedIn', 'true');
+
+        // Redirect to the home page
+        router.push('/');
+      } else {
+        console.log('Login failed:', data.message);
+        // Optionally handle login failure (e.g., show an error message)
+      }
+    } catch (error) {
+      console.error('An error occurred:', error);
+      // Optionally handle the error (e.g., show an error message)
+    }
   };
 
   return (

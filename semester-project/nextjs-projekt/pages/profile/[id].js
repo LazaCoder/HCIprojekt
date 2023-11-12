@@ -10,7 +10,7 @@ export default function Profile({ userProfile }) {
     <div className={styles.profileContainer}>
       <h1 className={styles.profileTitle}>{userProfile.name}</h1>
       <p className={styles.profileBio}>{userProfile.bio}</p>
-      {/* Display other profile fields as needed */}
+      <p className={styles.profileBio}>{userProfile.password}</p>
     </div>
   );
 }
