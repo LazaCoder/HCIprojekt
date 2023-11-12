@@ -1,5 +1,5 @@
 import { createClient } from 'contentful';
- // Assuming you have a CSS module for styling
+ import styles from '../../styles/Profile.module.css'// Assuming you have a CSS module for styling
 
 export default function Profile({ userProfile }) {
   if (!userProfile) {
