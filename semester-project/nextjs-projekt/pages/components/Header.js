@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './Header.module.css';
+import styles from '../../styles/Header.module.css'
 
 function Header() {
   return (
@@ -46,6 +46,8 @@ function Header() {
                 <Link href="/inquiry/bulk-orders">Bulk Orders</Link>
             </div>
         </div>
+        <Link href="/login" className={styles.dropbtn}>Login</Link>
+        <Link href="/register" className={styles.dropbtn}>Register</Link>
       </nav>
     </header>
   );

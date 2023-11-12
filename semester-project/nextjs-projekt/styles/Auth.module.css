@@ -1,0 +1,80 @@
+/* Auth.module.css */
+
+.authContainer {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 40px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .authContainer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .authForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .authForm div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .authForm label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+  }
+  
+  .authForm input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e3e3e3;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .authForm input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .authForm button {
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .authForm button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .authTitle {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #333;
+    font-size: 1.75rem;
+  }
+  
+  /* Dodajte Google fontove u head vašeg HTML dokumenta ili _document.js za Next.js */
+  /* <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> */
+  
