@@ -1,92 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+
+
 .container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0 0 1rem;
-  line-height: 1.15;
-  font-size: 3.6rem;
-}
-
-.title {
   text-align: center;
+  width:100%;
+  font-family: 'Zilla Slab', serif;
+  color: #ffff;
+  
+
 }
 
-.title,
-.description {
-  text-align: center;
+.upper{
+  display: flex;
+  flex-direction: column;
+  row-gap: 200px;
+  background-image: url('../public/chair.jpeg'); 
+  background-size: 110% 110%;
+  background-position:center;
+  height: 100%;
 }
 
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
 
-.grid {
+
+.main {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  max-width: 800px;
-  margin-top: 3rem;
-}
-
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
+  flex-direction: column;
+  row-gap: 20px;
+  width:fit-content;
+  background-color: #7dd2ad;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #717E79;
   border-radius: 10px;
-  transition:
-    color 0.15s ease,
-    border-color 0.15s ease;
+  color: black;
+  font-weight: 600;
+  padding: 80px 60px;
+  align-self: flex-end;
+  margin-right: 190px;
+  margin-bottom: 230px;
+  
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.title {
+  
 }
 
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.subtitle {
+
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.exploreButton {
+  padding: 10px 80px;
+  background-color: white; 
+  color: #000; 
+  font-size:x-large;
+  text-decoration: none;
+  border-style: solid;
+  border-color: black;
+  border-radius: 7px;
+  border-width: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
 }
 
-.logo {
-  height: 1em;
+.exploreButton:hover {
+  background-color: #cccccc; /* Light grey background on hover */
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+.categorySection {
+  display: flex;
+  
+  flex-direction: column;
+  background-color: #D4EDE9; 
+  color: #000;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items:flex-start;
+  row-gap: 30px;
+
+}
+
+.categoryTitle {
+  width: 100%;
+  align-self: flex-start;
+  text-align: left;
+  margin-left: 210px;
+
+}
+
+.categories {
+  display: flex;
+  font-size:x-large;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;  
+  width: 100%;
+  flex-direction: row;
+}
+
+.categoryButton {
+  padding: 10px 30px;
+  font-family: 'Zilla Slab', serif;
+  font-weight: 600;
+  background-color: #7dd2ad; /* Assuming white buttons */
+  border: 1px solid; /* Replace with color of the border if needed */
+  border-radius: 4px; /* Rounded corners for the buttons */
+  font-size:x-large;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+
+  
+}
+
+.categoryButton:hover {
+  background-color: #cccccc; /* Light grey background for the hover state */
+  border-color: #888888; /* Darker border color on hover */
+}
+
+
+.colored{
+  background-color: #B5BEC7;
+}
+
+
+.featuredSection {
+  padding: 20px;
+  max-width: 1150px; /* Adjust as per your layout */
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.title {
+  color: #000;
+  font-size: 2rem; /* Adjust as per your design */
+  margin-bottom: 20px; /* Adjust as per your design */
+  text-align: left;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+ 
+}
+
+.large {
+  grid-row: span 2;
+  grid-column: span 1;
+  overflow: hidden;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: transparent;
+  
+}
+.large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.normal {
+  overflow: hidden; 
+  height: 200px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 10px;
+}
+
+.normal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain image aspect ratio and cover the entire cell */
+}
+
+
+.newsletterSection {
+  background-color: #D4EDE9; /* Match the background color of your design */
+  padding: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.newsletterTitle {
+  font-size: 24px; /* Adjust as necessary */
+  margin-bottom: 10px;
+  
+}
+
+.newsletterSubtitle {
+  font-size: 16px; /* Adjust as necessary */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.newsletterForm {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust the spacing between input and button as necessary */
+}
+
+.emailInput {
+  padding: 12px;
+  font-size: 16px; /* Adjust as necessary */
+  border: 3px solid; /* Placeholder border color, change as needed */
+  border-radius: 5px; /* Rounded corners for the input field */
+  width: 600px; /* Adjust the width as necessary */
+  border-color: #703900;
+}
+
+.subscribeButton {
+  background-color: #7dd2ad;
+  padding: 10px 20px;
+  color: #000; /* Assuming black text for the button */
+  border: 1px solid; /* Replace with color of the border if needed */
+  border-radius: 4px; /* Rounded corners for the button */
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  font-weight: bold;
+}
+
+.subscribeButton:hover {
+  background-color: #cccccc; /* Light grey background for the hover state */
+  border-color: #888888; /* Darker border color on hover */
+}
+
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 15px;
+  align-items: center;
+  justify-items: center;
+}
+
+
+.productItem img{
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+
+
+}
+.featuredProductsContainer {
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer {
+ 
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  color: #000;
+  background-color: #B5BEC7;
+  text-decoration: none;
+  font-weight: bold;
+
+  
+}
+
+.footerSection {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px; 
+  width: 100%;
+  text-decoration: none;
+  font-family: 'Zilla Slab', serif;
+  column-gap: 20px;
+}
+
+.linksColumn {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px; 
+  
+  white-space: nowrap;
+  text-align: left;
+
+}
+
+.linksColumn h3 {
+  margin-bottom: 15px;
+  font-size: 1rem; 
+  text-decoration: none;
+  text-align: center;
+}
+
+.linksColumn span {
+  
+  cursor: pointer;
+  margin-bottom: 10px; 
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+  text-align:left;
+}
+
+.linksColumn p {
+  font-size: 0.7rem; 
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.link{
+text-decoration: none;
+color: inherit;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0;
+    padding: 0 15px;
+    width: 100%; 
+
+  }
+
+  .upper {
+    /* Remove fixed gaps and adjust background properties */
+    row-gap: 50px; /* Smaller gap on mobile */
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  .main {
+    padding: 20px 20px; /* Adjust padding for smaller screens */
+    margin-right: 0; /* Remove fixed margin */
+    margin-bottom: 50px; /* Provide some space below */
+    background-color: transparent;
+    border: none;
+    width: 100%; /* Full width */
+  }
+
+  .title,
+  .subtitle {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .exploreButton {
+    padding: 10px 60px; /* Adjust button padding */
+  }
+
+  .categorySection {
+    padding: 20px; /* Reduce padding */
+    align-items: center; /* Center align items */
+  }
+
+  .categoryTitle {
+    margin-left: 0; /* Remove fixed margin */
+    padding: 0 10px; /* Add padding to maintain layout */
+  }
+
+  .categories {
+    justify-content: flex-start; /* Align buttons to the start */
+    flex-wrap: wrap; /* Allow buttons to wrap */
+  }
+
+  .categoryButton {
+    margin-bottom: 10px; /* Add space between wrapped buttons */
+  }
+
+  .featuredSection {
+    max-width: none; /* Allow section to fill its container */
+    padding: 20px 10px; /* Adjust padding */
+  }
+
+  .gridContainer {
+    grid-template-columns: 1fr; /* Stack images in a single column */
+    gap: 10px; /* Reduce gap */
+  }
+
+  .large,
+  .normal {
+    grid-column: auto; /* Allow items to flow naturally */
+  }
+
+  .newsletterSection {
+    padding: 20px 10px; /* Adjust padding */
+  }
+
+  .newsletterForm {
+    flex-direction: column; /* Stack input and button */
+    align-items: center; /* Center align children */
+  }
+
+  .emailInput,
+  .subscribeButton {
+    width: 90%; /* Full width with some margin */
+    margin-bottom: 10px; /* Space between stacked elements */
+  }
+
+  .footer {
+    flex-direction: row; /* Stack footer content */
+  }
+
+  .footerSection {
+    flex-direction: row; /* Stack footer columns */
+    align-items: center; /* Center align items */
+  }
+
+  .linksColumn {
+    align-items: center; 
+    margin-bottom: 20px;
+  }
+
+  /* Adjust h3 and span sizes in the footer if necessary */
+  .linksColumn h3,
+  .linksColumn span,
+  .linksColumn p {
+    font-size: 0.9rem; /* Adjust font size */
+  }
+
+  /* Ensure any buttons or links are easily tappable */
+  .exploreButton,
+  .categoryButton,
+  .subscribeButton,
+  .linksColumn span {
+    min-height: 44px; /* Minimum tappable area */
+  }
+
+  /* Adjust any specific elements with fixed heights that might cause layout issues */
+  .some-fixed-height-element {
+    height: auto; /* Make height responsive */
+  }
+  
+  /* If you have any elements hidden on desktop that should be visible on mobile, or vice versa */
+  .desktopOnly {
+    display: none; /* Hide on mobile */
+  }
+  .mobileOnly {
+    display: none; /* Show on mobile */
   }
 }

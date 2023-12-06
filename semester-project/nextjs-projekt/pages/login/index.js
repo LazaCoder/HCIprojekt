@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import { useUser } from '../../contexts/UserContext'; // Adjust the import path as needed
-import styles from '../../styles/Auth.module.css'; // Ensure the path to your CSS module is correct
+import styles from '../../styles/Auth.module.css'; 
+
+
 
 function LoginPage() {
   const [username, setUsername] = useState('');
