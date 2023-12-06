@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 200px;
-  background-image: url('../public/chair.jpeg'); 
+  background-image: url('/chair.jpeg'); 
   background-size: 110% 110%;
   background-position:center;
   height: 100%;
