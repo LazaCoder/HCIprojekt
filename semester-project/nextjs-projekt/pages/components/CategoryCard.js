@@ -6,7 +6,7 @@ const CategoryCard = ({ title, imageUrl, linkHref }) => {
   return (
     <div className={styles.card} style={{ backgroundImage: `url(${imageUrl})` }}>
       <h2 className={styles.title}>{title}</h2>
-      <Link href={linkHref} className={styles.link}>Shop Now</Link>
+      <Link href={`${imageUrl}`} className={styles.link}>Shop Now</Link>
     </div>
   );
 };

@@ -11,12 +11,12 @@ function HomePage() {
 
 
   const categories = [
-    { title: 'Living Room', imageUrl: '/category-living-room.png', linkHref: '/living-room' },
-    { title: 'Bedroom', imageUrl: '/category-bedroom.png', linkHref: '/bedroom' },
-    { title: 'Kitchen', imageUrl: '/category-bathroom.png', linkHref: '/bedroom' },
-    { title: 'Toilet', imageUrl: '/category-kitchen.png', linkHref: '/bedroom' },
-    { title: 'Gym', imageUrl: '/category-exterior.png', linkHref: '/bedroom' },
-    { title: 'Garden', imageUrl: '/category-getInspired.png', linkHref: '/bedroom' },
+    { title: 'Living Room', imageUrl: '/categorylivingroom.png', linkHref: '/living-room' },
+    { title: 'Bedroom', imageUrl: '/categorybedroom.png', linkHref: '/bedroom' },
+    { title: 'Kitchen', imageUrl: '/categorybathroom.png', linkHref: '/bedroom' },
+    { title: 'Toilet', imageUrl: '/categorykitchen.png', linkHref: '/bedroom' },
+    { title: 'Gym', imageUrl: '/categoryexterior.png', linkHref: '/bedroom' },
+    { title: 'Garden', imageUrl: '/categorygetInspired.png', linkHref: '/bedroom' },
   ];
 
 
@@ -29,7 +29,7 @@ function HomePage() {
       <Header />
       <main className={styles.main}>
         <h3 className={styles.title}>Where Style Meets <br/> Comfort</h3>
-        <Link href="/explore" className={styles.exploreButton}>
+        <Link href="/shop" className={styles.exploreButton}>
           <div >Explore</div>
         </Link>
       </main>

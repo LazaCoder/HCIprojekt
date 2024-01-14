@@ -4,6 +4,13 @@ import styles from '../../styles/ProductItem.module.css';
 
 function ProductItem({ product }) {
     // Create an array of JSX Image components for the stars
+
+    if (!product) {
+        console.log('Product is undefined');
+        return null; // or render some placeholder content
+    }
+
+
     const starImages = [];
     for (let i = 0; i < 5; i++) {
         starImages.push(
@@ -17,7 +24,6 @@ function ProductItem({ product }) {
         );
     }
 
-    console.log(product.name)
     return (
         <div className={styles.productItem}>
             <img src={"https:" + product.image.fields.file.url} alt={product.name} className={styles.image} />
