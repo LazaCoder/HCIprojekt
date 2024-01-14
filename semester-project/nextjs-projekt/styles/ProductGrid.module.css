@@ -1,0 +1,77 @@
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 25px; 
+  padding: 0px;
+  justify-items: center; 
+  margin-bottom: 3%;
+  margin-top: 3%;
+  
+}
+
+.aligned{
+display: flex;
+
+flex-direction: column;
+
+
+}
+
+.buttonDown{
+width: 15%;
+align-self: center;
+padding-left: 2.5%;
+padding-right: 2.5%;
+padding-top: 1%;
+padding-bottom: 1%;
+text-align: center;
+font-size: 1em;
+background-color: black;
+color: white;
+border: none;
+cursor: pointer;
+border: 2px solid black; 
+border-radius: 5px;
+box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+font-size: 1.3em;
+font-family: 'Zilla Slab', serif;
+font-weight: medium;
+margin-bottom: 3%;
+
+
+}
+
+
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  column-gap: 2%;
+  padding: 16px; 
+  margin-top: 2%;
+  grid-gap: 16px;
+  margin-left: 1%;
+  font-weight: 500;
+}
+
+
+.button {
+  
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 0.8%;
+  padding-bottom: 0.8%;
+  text-align: center;
+  font-size: 0.1em;
+  background-color: #B5BEC7;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border: 2px solid black; 
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  font-size: 1em;
+  font-family: 'Zilla Slab', serif;
+  font-weight: 600;
+}

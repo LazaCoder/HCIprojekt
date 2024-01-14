@@ -1,0 +1,230 @@
+/* ProductPage.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+
+.main {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+    font-family: 'Zilla Slab', serif;
+    font-weight: bold;
+  }
+
+  .colored{
+  background-color: #B5BEC7;
+  height: 24%;
+
+  }
+
+  .productContainer {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2rem;
+   align-items: flex-start;
+  }
+
+  .priceAndRating{
+
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+
+
+  }
+
+  .readMoreButton {
+    background-color: transparent;
+    color: black; 
+    font-size: 0.8rem; 
+    text-align: left; 
+    border: none; 
+    padding: 0; 
+    cursor: pointer; 
+    outline: none; 
+    margin-bottom: 0.8rem;
+  }
+
+  .ratingAndReviews{
+   margin-top: 0.52em;
+
+
+  }
+  
+  .productImage {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+  }
+  
+  .productDetails {
+    display: flex;
+    flex-direction: column;
+    padding-top:2rem;
+    
+  }
+  
+  .productTitle {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .productPrice {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .productDescription {
+    font-weight: normal;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .flex{
+display:flex;
+flex-direction: row;
+gap: 1rem;
+
+
+  }
+
+.quantitySelector {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  
+}
+
+.quantityButton {
+  
+  font-size: 2.5rem;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+
+}
+
+.quantity {
+  width: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 0.2rem;
+  
+  
+  
+}
+
+.actionButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.addToCartBtn {
+  padding: 0rem 1.5rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border: 2px solid black; 
+  font-family: 'Zilla Slab', serif;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  font-size: 1em;
+}
+
+.addToCartBtn:hover {
+  background-color: #333;
+  color: white;
+}
+
+.buyNowBtn {
+  padding: 0rem 1.5rem;
+  background-color: #c00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border: 2px solid black; 
+  font-family: 'Zilla Slab', serif;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  font-size: 1em;
+}
+
+.buttonDown{
+    width: fit-content;
+  align-self: center;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  font-size: 1em;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border: 2px solid black; 
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  font-size: 1.3em;
+  font-family: 'Zilla Slab', serif;
+  font-weight: bold;
+  
+  
+  
+  }
+
+.buyNowBtn:hover {
+  background-color: yellow
+}
+
+@media (max-width: 768px) {
+  .productContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .actionButtons {
+    flex-direction: column;
+  }
+}
+
+
+  
+  @media (max-width: 768px) {
+    .productContainer {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .recommendedSection {
+    margin-top: 0rem; 
+  }
+  
+  .recommendedTitle {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  
+  .recommendedProducts {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem; 
+  }
+  

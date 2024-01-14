@@ -1,69 +1,52 @@
-/* Header.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+
 .header {
-  background: transparent;
   
-}
-
-.navContainer {
+  margin-top: 1%;
+  background-color: transparent;
   display: flex;
-  padding-top: 90px;
   justify-content: center;
-  column-gap: 60px;
-  font-weight:700;
-  
-
+  align-items: center;
+  column-gap: 5%;
+  font-family: 'Zilla Slab', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: -1%;
 }
+
 
 .navItem {
-  background-color: #7dd2ad; /* Adjust the color to match your design */
-  margin-right: 10px;
-  padding: 15px 30px;
   color: black;
-
-  font-size: x-large;
+  transition: color 0.3s ease;
   text-decoration: none;
-  border-style: solid;
-  border-color: black;
-  border-width: 0.5px;
-  border-radius: 4px; /* You can adjust the border-radius to match your design */
+  padding: 0.5rem 1.5rem;
+  
 }
 
-.logoContainer {
-  display: flex;
-  align-items: center;
+.navItem:hover {
+  color: black; 
+  background-color: white; 
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+}
+
+.navItemActive {
+  color: white; 
+  background-color: black; 
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  
+  
 }
 
 .logo {
-  margin-right: 10px;
-  font-size: 20px; /* Adjust the font size as needed */
-  font-weight: bold;
-  color: #333;
+  height: auto; /* Maintain aspect ratio */
+  width: 150px; /* Adjust width as needed */
 }
 
-.authLinks {
-  display: flex;
-}
-
-.authLink {
-  margin-left: 10px;
-  color: #333;
-  text-decoration: none;
-}
-
-.logoutButton {
-  background-color: #f44336; /* Adjust button color to match your design */
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 4px; /* Optional: if you want rounded corners on the button */
-}
-
-@media (max-width: 768px) {
- .header{
-display: none;
-
- }
-
-
+.logoContainer {
+   /* This will push the logo container to the right */
+  padding-right: 1rem; /* You can adjust this to increase the space from the right edge */
+  align-self:flex-end;
+  align-items: flex-end;
 }

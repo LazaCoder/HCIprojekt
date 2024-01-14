@@ -6,6 +6,7 @@
   flex-direction: column;
   text-align: center;
   width:100%;
+  height: fit-content;
   font-family: 'Zilla Slab', serif;
   color: #ffff;
   
@@ -13,6 +14,7 @@
 }
 
 .upper{
+ 
   display: flex;
   flex-direction: column;
   row-gap: 200px;
@@ -29,14 +31,9 @@
   align-items: center;
   flex-direction: column;
   row-gap: 20px;
-  width:fit-content;
-  background-color: #7dd2ad;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #717E79;
-  border-radius: 10px;
+  
   color: black;
-  font-weight: 600;
+  font-weight: 400;
   padding: 80px 60px;
   align-self: flex-end;
   margin-right: 190px;
@@ -44,8 +41,18 @@
   
 }
 
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  padding: 4rem; 
+}
+
 .title {
-  
+ 
+  font-size: 20em;
+  font-weight: 600;
 }
 
 .subtitle {
@@ -57,6 +64,7 @@
   background-color: white; 
   color: #000; 
   font-size:x-large;
+  font-weight: 500;
   text-decoration: none;
   border-style: solid;
   border-color: black;
@@ -77,8 +85,7 @@
   flex-direction: column;
   background-color: #D4EDE9; 
   color: #000;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding:5rem;
   align-items:flex-start;
   row-gap: 30px;
 
@@ -123,7 +130,7 @@
 
 
 .colored{
-  background-color: #B5BEC7;
+  background-color: white;
 }
 
 
@@ -138,9 +145,9 @@
 
 .title {
   color: #000;
-  font-size: 2rem; /* Adjust as per your design */
+  font-size: 4rem; /* Adjust as per your design */
   margin-bottom: 20px; /* Adjust as per your design */
-  text-align: left;
+  text-align: center;
 }
 
 .gridContainer {
@@ -182,48 +189,44 @@
 
 
 .newsletterSection {
-  background-color: #D4EDE9; /* Match the background color of your design */
-  padding: 20px;
+  background-color: #B5BEC7; /* Match the background color of your design */
+  padding: 5%;
   text-align: center;
   color: #000;
 }
 
 .newsletterTitle {
-  font-size: 24px; /* Adjust as necessary */
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 3%;
+  font-weight: 600;
   
 }
 
-.newsletterSubtitle {
-  font-size: 16px; /* Adjust as necessary */
-  margin-bottom: 10px;
-  font-weight: bold;
-}
 
 .newsletterForm {
   display: flex;
   justify-content: center;
-  gap: 10px; /* Adjust the spacing between input and button as necessary */
+  gap: 2%; 
 }
 
 .emailInput {
   padding: 12px;
   font-size: 16px; /* Adjust as necessary */
-  border: 3px solid; /* Placeholder border color, change as needed */
+  border: 1px solid; /* Placeholder border color, change as needed */
   border-radius: 5px; /* Rounded corners for the input field */
   width: 600px; /* Adjust the width as necessary */
-  border-color: #703900;
+  border-color: black;
 }
 
 .subscribeButton {
-  background-color: #7dd2ad;
-  padding: 10px 20px;
+  background-color: white;
+  padding: 1rem 2rem;
   color: #000; /* Assuming black text for the button */
-  border: 1px solid; /* Replace with color of the border if needed */
+  border: 2px solid; /* Replace with color of the border if needed */
   border-radius: 4px; /* Rounded corners for the button */
   cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .subscribeButton:hover {

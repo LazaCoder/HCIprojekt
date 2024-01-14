@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
+
+.footer {
+    background-color: #B5BEC7; /* Match the footer background color */
+     
+    padding: 0px 0; /* Adjust padding */
+    color: black;
+
+    font-family: 'Zilla Slab', serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 40px 0;
+    
+
+      
+  }
+
+  .footerSection{
+
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    
+
+
+  }
+  .title{
+    font-weight: bold;
+   font-size: 1.3em;
+
+  }
+  
+  .linksColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    
+    padding: 0.5rem;
+  }
+  
+
+  
+  .linksColumn div {
+
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+
+  .link{
+  font-weight:600;
+
+
+  }
+  
+  .socialIcons {
+    display: flex;
+    justify-content: space-around; /* Space out the icons */
+    align-items: center;
+    gap: 5%;
+  }
+  
+  .paymentIcons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Space out the payment icons */
+    gap:5%;
+  }
+  
+  .copyRight {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 2%;
+  }
+  
+  /* Add any additional responsive adjustments or icon styles as needed */
+
+  

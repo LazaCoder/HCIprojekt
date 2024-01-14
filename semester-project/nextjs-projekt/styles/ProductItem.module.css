@@ -1,0 +1,47 @@
+
+.productItem {
+  display: flex;
+  flex-direction: column;
+  overflow:visible;
+  justify-items: flex-start;
+  text-align: left;
+  box-sizing: border-box;
+  
+
+}
+
+.title:hover {
+  color: blue;
+}
+
+
+
+.image {
+  object-fit: cover;
+  width: 250px;
+  height: 300px;
+}
+
+.flex{
+display: flex;
+gap: 2%;
+
+}
+
+.title {
+  font-size: 1.1rem;
+  color:black;
+  font-weight: 600;
+}
+
+.price {
+  font-family: 'Zilla Slab', serif;
+font-weight: 600;
+  font-size: 1rem;
+  color: black;
+}
+
+.rating {
+  color: black;
+  margin-top: 1.3%;
+}

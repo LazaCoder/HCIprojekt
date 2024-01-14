@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width:100%;
+  font-family: 'Zilla Slab', serif;
+  color: #ffff;
+  
+
+}
+
+.upper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    background-image: url('/whiteChair.png'); 
+    background-position:center;
+    background-size: 100% 100%;
+    height: 100%;
+  }
+
+.title {
+    color: black;
+    font-size: 6em;
+    font-weight: 600;
+    margin-bottom: 0px;
+  }
+
+
+  .searchContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 2%;
+    margin-bottom: 3%; 
+    
+
+  }
+  
+  .searchInput {
+    padding: 1%;
+    padding-left: 2%;
+    width:60%;
+    text-align: left;
+    font-size: 1em;
+    border: 1px solid black;
+  
+    font-family: 'Zilla Slab', serif;
+    font-weight: 500;
+    
+    
+  }
+  
+  .searchButton {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    text-align: center;
+    font-size: 1em;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border: 2px solid black; 
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    font-size: 1.3em;
+    
+    font-family: 'Zilla Slab', serif;
+    font-weight: 500;
+  }

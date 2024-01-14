@@ -1,27 +1,38 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from '../../styles/Header.module.css';
-import { useUser } from '../../contexts/UserContext';
+import { useRouter } from 'next/router';
 
 function Header() {
-  const { isLoggedIn, setIsLoggedIn } = useUser();
+  const router = useRouter();
 
-  const handleLogout = () => {
-    localStorage.setItem('isLoggedIn', 'false');
-    setIsLoggedIn(false);
-    
+  // Function to apply active styles based on the current route
+  const getNavItemStyle = (path) => {
+    return router.pathname === path ? styles.navItemActive : styles.navItem;
   };
 
   return (
-    <header className={styles.header}>
-      <div className={styles.navContainer}>
-        <Link href="/" className={styles.navItem}>Home</Link>
-        <Link href="/new-in" className={styles.navItem}>New In</Link>
-        <Link href="/shop" className={styles.navItem}>Shop</Link>
-        <Link href="/inspiration" className={styles.navItem}>Inspiration</Link>
-        <Link href="/inquiry" className={styles.navItem}>Inquiry</Link>
-      </div>
-    </header>
+    <div className={styles.header}>
+        <Link href="/" passHref>
+          <div className={getNavItemStyle('/')}>Home</div>
+        </Link>
+        <Link href="/new-in" passHref>
+          <div className={getNavItemStyle('/new-in')}>Christmas </div>
+        </Link>
+        <Link href="/shop" passHref>
+          <div className={getNavItemStyle('/shop')}>Shop</div>
+        </Link>
+        <Link href="/inspiration" passHref>
+          <div className={getNavItemStyle('/inspiration')}>Inspiration</div>
+        </Link>
+        <Link href="/inquiry" passHref>
+          <div className={getNavItemStyle('/inquiry')}>Inquiry</div>
+        </Link>
+
+       <div> <img src="/logo.png" alt="HCI Home Decor" className={styles.logo} /> </div>
+
+      
+    </div>
   );
 }
 

@@ -1,0 +1,40 @@
+/* components/CategoryCard.module.css */
+.card {
+  
+    background-size: cover;
+    background-position: center;
+    height: 100%; /* Adjust based on your design */
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+   
+    
+    text-align: left; 
+    width: 350px;
+    height: 350px;
+  }
+  
+  .title {
+    color: #ffffff;
+    margin-top: 280px;
+    margin-left: 20px;
+    padding: 1px 1px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+
+  }
+  
+  .link {
+    margin-left: 20px;
+    padding: 1px 1px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+             1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+  }
+  
