@@ -123,7 +123,7 @@ function ProductPage() {
             </div>
             </div>
             <p className={styles.productDescription}>
-          {isFullDescriptionShown ? product.description : getShortDescription(product.description.content[0].content[0].value)}
+          {isFullDescriptionShown ? product.description.content[0].content[0].value : getShortDescription(product.description.content[0].content[0].value)}
         </p>
         <button onClick={toggleDescription} className={styles.readMoreButton}>
           {isFullDescriptionShown ? 'Less details' : 'More details'}
