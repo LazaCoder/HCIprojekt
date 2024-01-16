@@ -45,16 +45,38 @@
     border-radius: 4px;
     font-family: 'Zilla Slab', serif;
   }
+
+
   
   .textarea {
     min-height: 100px;
     font-family: 'Zilla Slab', serif;
+  }
+
+  .input:focus{
+    outline: none;
+    border:2px solid black;
+  }
+
+  .textarea:focus{
+    outline: none;
+    border:2px solid black;
+
+
   }
   
   .checkboxContainer {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
+    font-weight: 600;
+    justify-content: space-between;
+  }
+
+  .flex{
+ display: flex;
+ gap:0.7rem;
+
   }
   
   .button {
@@ -67,6 +89,7 @@
     border-radius: 4px;
     cursor: pointer;
     font-size: 1rem;
+    font-weight: 600;
     border-width: 2px;
     width: 25%;
     border-style: solid;
@@ -75,7 +98,7 @@
   }
   
   .button:hover {
-    background-color: white; /* Adjust hover state color to match the design */
-
+    background-color: black; /* Adjust hover state color to match the design */
+    color: white;
   }
   

@@ -83,12 +83,13 @@
   border-radius: 7px;
   border-width: 2px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease;
 
 }
 
 .exploreButton:hover {
-  background-color: #cccccc; /* Light grey background on hover */
+  background-color: black;
+  color: white;
 }
 
 .categorySection {
@@ -136,8 +137,8 @@
 }
 
 .categoryButton:hover {
-  background-color: #cccccc; /* Light grey background for the hover state */
-  border-color: #888888; /* Darker border color on hover */
+  background-color: black;
+  color: white;
 }
 
 
@@ -222,6 +223,7 @@
 }
 
 .emailInput {
+  box-sizing: border-box;
   padding: 12px;
   font-size: 16px; /* Adjust as necessary */
   border: 1px solid; /* Placeholder border color, change as needed */
@@ -230,20 +232,31 @@
   border-color: black;
 }
 
+.emailInput:focus {
+  outline: none;
+  padding: 12px;
+  font-size: 16px; 
+  border: 2px solid; 
+  border-radius: 5px; 
+  width: 600px; 
+  border-color: black;
+}
+
 .subscribeButton {
   background-color: white;
   padding: 1rem 2rem;
-  color: #000; /* Assuming black text for the button */
-  border: 2px solid; /* Replace with color of the border if needed */
-  border-radius: 4px; /* Rounded corners for the button */
+  color: #000; 
+  border: 2px solid; 
+  border-radius: 4px; 
   cursor: pointer;
-  transition: background-color 0.3s, border-color 0.3s;
   font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .subscribeButton:hover {
-  background-color: #cccccc; /* Light grey background for the hover state */
-  border-color: #888888; /* Darker border color on hover */
+  background-color: black;
+  color: white;
+  border-color: #000;
 }
 
 

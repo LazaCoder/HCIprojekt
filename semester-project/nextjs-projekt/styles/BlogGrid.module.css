@@ -13,9 +13,11 @@
     display: flex;
     flex-direction: column;
 
-    overflow: hidden;
+    
     padding: 1rem;
+    padding-bottom: 0rem;
     background-color: rgba(149, 149, 149,0.12);
+  
    
   }
   
@@ -27,10 +29,11 @@
   }
   
   .title {
+   
     background:transparent;
     padding: 1rem 1rem;
-    padding-bottom: 1rem;
-    font-size: 1.7rem;
+    
+    font-size: 1.8rem;
     font-family: 'Zilla Slab', serif;
     font-weight: 600;
     color: black;
@@ -43,7 +46,18 @@
    width: 50px; /* width of the rule */
    height: 4px; /* thickness of the rule */
    background-color: #000; /* color of the rule */
-   margin: 0 auto; /* centers the rule */
+   margin:0 auto;
+
+
+
+  }
+
+  .flex{
+    
+
+ display: flex;
+ flex-direction: column;
+ 
 
 
   }

@@ -14,8 +14,10 @@ const BlogGrid = ({ posts }) => {
       {posts.map((post, index) => (
         <div key={index} className={styles.card}>
           <img src={post.imageUrl} alt={post.title} className={styles.image} />
-          <h3 className={styles.title}>{post.title}</h3>
+          <div className={styles.flex}>
+          <div className={styles.title}>{post.title}</div>
           <div className={styles.rule}></div>
+           </div>
         </div>
       ))}
     </div>

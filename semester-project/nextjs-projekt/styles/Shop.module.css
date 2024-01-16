@@ -86,4 +86,15 @@
     font-family: 'Zilla Slab', serif;
     font-weight: 500;
     margin-bottom: 15%;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+
+  .exploreButton:hover{
+  background-color: black;
+ color: white;
+
+
+
+
   }

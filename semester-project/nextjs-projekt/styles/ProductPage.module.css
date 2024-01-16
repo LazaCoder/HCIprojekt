@@ -10,6 +10,12 @@
     font-weight: bold;
   }
 
+  .productImage:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+
+
   .colored{
   background-color: #B5BEC7;
   height: 24%;
@@ -22,6 +28,7 @@
     grid-template-columns: 2fr 3fr;
     gap: 2rem;
    align-items: flex-start;
+   margin-bottom: 0px;
   }
 
   .priceAndRating{
@@ -29,6 +36,7 @@
     display: flex;
     flex-direction: row;
     gap: 1em;
+  
 
 
   }
@@ -55,12 +63,14 @@
     width: 100%;
     height: 80%;
     object-fit: cover;
+    cursor: pointer;
   }
   
   .productDetails {
     display: flex;
     flex-direction: column;
     padding-top:2rem;
+    font-weight: 500;
     
   }
   
@@ -85,8 +95,24 @@
   .flex{
 display:flex;
 flex-direction: row;
-gap: 1rem;
+gap: 2rem;
 
+
+  }
+
+  .smallImagesContainer{
+   display: flex;
+   margin-top: 6.8rem;
+   gap: 1rem;
+    
+
+
+  }
+
+  .smallImage{
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
 
   }
 
@@ -108,9 +134,10 @@ gap: 1rem;
 
 .quantity {
   width: 2rem;
+  
   font-size: 2.5rem;
   text-align: center;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.4rem;
   
   
   

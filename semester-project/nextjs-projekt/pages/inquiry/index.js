@@ -48,14 +48,18 @@ const InquiryPage = () => {
             className={styles.textarea}
           />
           <label className={styles.checkboxContainer}>
+            <div className={styles.flex}>
             <input 
               type="checkbox" 
               checked={newsletter} 
               onChange={(e) => setNewsletter(e.target.checked)} 
             />
+            
             Subscribe to our newsletter
+            </div>
+            <button type="submit" className={styles.button}>Send</button>
           </label>
-          <button type="submit" className={styles.button}>Send</button>
+          
         </form>
       </main>
      

@@ -6,13 +6,13 @@
 
   .header{
   background-color: #B5BEC7;
-  height: 50%;
+  overflow: hidden;
 
   }
 
   .container {
     text-align: center;
     width:100%;
-    height: fit-content;
+    
     font-family: 'Zilla Slab', serif;
   }
