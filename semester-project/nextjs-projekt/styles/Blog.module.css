@@ -1,0 +1,18 @@
+.blogLayout {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+  }
+
+  .header{
+  background-color: #B5BEC7;
+  height: 50%;
+
+  }
+
+  .container {
+    text-align: center;
+    width:100%;
+    height: fit-content;
+    font-family: 'Zilla Slab', serif;
+  }

@@ -1,0 +1,49 @@
+
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin: 1rem;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+    padding: 1rem;
+    background-color: rgba(149, 149, 149,0.12);
+   
+  }
+  
+  .image {
+    width: 100%;
+    display: block;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+  
+  .title {
+    background:transparent;
+    padding: 1rem 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.7rem;
+    font-family: 'Zilla Slab', serif;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  .rule{
+
+   width: 50px; /* width of the rule */
+   height: 4px; /* thickness of the rule */
+   background-color: #000; /* color of the rule */
+   margin: 0 auto; /* centers the rule */
+
+
+  }
