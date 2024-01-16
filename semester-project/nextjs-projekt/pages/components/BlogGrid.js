@@ -3,6 +3,12 @@
 import styles from '../../styles/BlogGrid.module.css'; // adjust the path as necessary
 
 const BlogGrid = ({ posts }) => {
+
+    if(!posts){
+        return null;
+    }
+
+
   return (
     <div className={styles.grid}>
       {posts.map((post, index) => (
