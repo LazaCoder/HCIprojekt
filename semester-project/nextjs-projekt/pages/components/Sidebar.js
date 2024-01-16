@@ -3,6 +3,14 @@
 import styles from '../../styles/Sidebar.module.css'; // adjust the path as necessary
 
 const Sidebar = ({ stories }) => {
+
+  
+  if(!stories){
+    return null;
+}
+
+
+
   return (
     <aside className={styles.sidebar}>
       <div className={styles.searchTitle}>Search</div>
