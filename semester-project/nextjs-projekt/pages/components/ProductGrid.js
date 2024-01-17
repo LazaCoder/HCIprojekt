@@ -7,7 +7,7 @@ import client from '../api/contentfulClient';
 function ProductGrid() {
   const [products, setProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [showMenu, setShowMenu] = useState(false); // State to toggle menu visibility
+  const [showMenu, setShowMenu] = useState(false); 
 
   useEffect(() => {
     const getProducts = async () => {

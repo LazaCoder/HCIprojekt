@@ -98,7 +98,7 @@
   }
   
   .button:hover {
-    background-color: black; /* Adjust hover state color to match the design */
+    background-color: black; 
     color: white;
   }
   

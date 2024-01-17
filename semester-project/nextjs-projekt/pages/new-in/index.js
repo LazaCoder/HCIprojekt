@@ -3,11 +3,15 @@ import Header from '../components/Header'
 import styles from '../../styles/NewIn.module.css';
 import ProductGrid from '../components/ProductGrid';
 import Footer from '../components/Footer';
+import Head from 'next/head';
 
 
 function NewInPage() {
   return (
     <div className={styles.container}>
+       <Head>
+       <title>Shop</title>
+      </Head>
       <div className={styles.upper}>
       <Header />
       <main className={styles.main}>

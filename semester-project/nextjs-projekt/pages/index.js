@@ -59,7 +59,7 @@ function HomePage() {
         <link rel="preload" href="/category_4.webp" as="image" />
         <link rel="preload" href="/category_5.webp" as="image" />
         <link rel="preload" href="/category.webp" as="image" />
-        
+        <title>Home</title>
       </Head>
       <div className={styles.upper}>
       <Header />
@@ -91,8 +91,10 @@ function HomePage() {
           <button type="submit" className={styles.subscribeButton}>Subscribe</button>
         </form>
     </div>
+    <div className={styles.desktopOnly}>
     <ProductGrid/>
-
+    </div>
+    
 
     <Footer/>
    

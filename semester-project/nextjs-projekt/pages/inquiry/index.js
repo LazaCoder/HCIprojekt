@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Header from '../components/Header'; // Adjust the path as necessary
 import Footer from '../components/Footer'; // Adjust the path as necessary
 import styles from '../../styles/Inquiry.module.css'; // Use CSS Modules for styling
+import Head from 'next/head';
 
 const InquiryPage = () => {
   // State for form data
@@ -20,6 +21,10 @@ const InquiryPage = () => {
 
   return (
     <div>
+      <Head>
+       <title>Inquiry</title>
+
+      </Head>
     <div className={styles.background}>
      <Header/>
       <main className={styles.main}>

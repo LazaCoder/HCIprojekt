@@ -2,9 +2,17 @@ import React from 'react';
 import Link from 'next/link';
 import styles from '../../styles/Header.module.css';
 import { useRouter } from 'next/router';
+import { useState } from 'react';
 
 function Header() {
+
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   const router = useRouter();
+
 
   // Function to apply active styles based on the current route
   const getNavItemStyle = (path) => {
@@ -13,6 +21,10 @@ function Header() {
 
   return (
     <div className={styles.header}>
+
+
+
+
         <Link href="/" passHref>
           <div className={getNavItemStyle('/')}>Home</div>
         </Link>

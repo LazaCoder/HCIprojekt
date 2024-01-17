@@ -19,7 +19,7 @@
   flex-direction: column;
   row-gap: 200px;
   background-image: url('/chair.jpeg'); 
-  background-size: 110% 110%;
+  background-size: 100% 100%;
   background-position:center;
   height: 100%;
 }
@@ -67,9 +67,7 @@
   font-weight: 600;
 }
 
-.subtitle {
 
-}
 
 .exploreButton {
   padding: 10px 80px;
@@ -344,38 +342,50 @@ text-decoration: none;
 color: inherit;
 }
 
+.mobileOnly {
+  display: none; /* Show on mobile */
+}
+
 @media (max-width: 768px) {
   .container {
     margin: 0;
-    padding: 0 15px;
+    
     width: 100%; 
 
   }
 
   .upper {
-    /* Remove fixed gaps and adjust background properties */
-    row-gap: 50px; /* Smaller gap on mobile */
     background-size: cover; /* Adjust as needed */
     background-repeat: no-repeat;
     height: 100%;
+    width: 100%;
+    background-size: 110% 110%;
+    row-gap: 1rem;
+    
+   
+    
   }
 
   .main {
     padding: 20px 20px; /* Adjust padding for smaller screens */
     margin-right: 0; /* Remove fixed margin */
-    margin-bottom: 50px; /* Provide some space below */
+    margin-bottom: 100px; /* Provide some space below */
     background-color: transparent;
     border: none;
     width: 100%; /* Full width */
+    row-gap: 0rem;
+   
   }
 
   .title,
   .subtitle {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    font-size: 2rem; /* Adjust font size for smaller screens */
   }
 
   .exploreButton {
     padding: 10px 60px; /* Adjust button padding */
+    font-size: 1rem;
+
   }
 
   .categorySection {
@@ -458,7 +468,7 @@ color: inherit;
   .categoryButton,
   .subscribeButton,
   .linksColumn span {
-    min-height: 44px; /* Minimum tappable area */
+    min-height: 40px; /* Minimum tappable area */
   }
 
   /* Adjust any specific elements with fixed heights that might cause layout issues */
@@ -470,7 +480,5 @@ color: inherit;
   .desktopOnly {
     display: none; /* Hide on mobile */
   }
-  .mobileOnly {
-    display: none; /* Show on mobile */
-  }
+  
 }

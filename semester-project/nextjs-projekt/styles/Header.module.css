@@ -50,3 +50,29 @@
   align-self:flex-end;
   align-items: flex-end;
 }
+
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between; /* Align logo to left and hamburger to right */
+  }
+
+  .logo {
+    height: auto; /* Maintain aspect ratio */
+    width: 75px; /* Adjust width as needed */
+  }
+
+  .navItem, .navItemActive {
+    display: none; /* Hide the text links on mobile */
+  }
+
+  .logoContainer {
+    display: block;
+    width: auto;
+  }
+
+  .menuIcon {
+    display: block; /* Show the menu icon on mobile */
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+  }
+}

@@ -105,7 +105,7 @@ function ProductPage() {
   }
 
   return (
-    <>
+    <div>
           <Lightbox
         open={lightboxOpen}
         styles={{ container: { backgroundColor: "rgba(0, 0, 0, .96)" },  container: { fontFamily: "'Zilla Slab', serif" } }}
@@ -127,7 +127,7 @@ function ProductPage() {
         ]}
       />
       
-      <div className={styles.colored}><Header/></div>
+      <div className={styles.colored}><Header className={styles.header}/></div>
       <main className={styles.main}>
         <div className={styles.productContainer}>
           <img src={"https:" + product.image.fields.file.url} alt={product.name} className={styles.productImage} onClick={() => setLightboxOpen(true)} />
@@ -159,11 +159,13 @@ function ProductPage() {
             <button className={styles.buyNowBtn} onClick={handleBuyNow()}>Buy Now</button>
             </div>
             </div>
-            <div className={styles.smallImagesContainer}>
-              <img src="/christmasTree1.png" alt="small christmas tree" className={styles.smallImage} />
-              <img src="/christmasTree2.png" alt="small christmas tree" className={styles.smallImage} />
-              <img src="/christmasTree3.png" alt="small christmas tree" className={styles.smallImage} />
-             </div>
+            {!isFullDescriptionShown && (
+          <div className={styles.smallImagesContainer}>
+            <img src="/christmasTree1.png" alt="small christmas tree" className={styles.smallImage} />
+            <img src="/christmasTree2.png" alt="small christmas tree" className={styles.smallImage} />
+            <img src="/christmasTree3.png" alt="small christmas tree" className={styles.smallImage} />
+          </div>
+        )}
 
           </div>
         </div>
@@ -180,7 +182,7 @@ function ProductPage() {
 </div>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

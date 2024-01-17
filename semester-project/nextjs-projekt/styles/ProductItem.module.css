@@ -6,20 +6,39 @@
   justify-items: flex-start;
   text-align: left;
   box-sizing: border-box;
+  position: relative;
   
 
 }
 
-.title:hover {
-  color: blue;
+
+.productItem:hover .image {
+  transition: transform 0.3s ease;
+  transform: scale(1.05); 
+  font-weight: bolder;
+}
+
+.productItem:hover h3 {
+  font-weight: bold;
 }
 
 
 
+
+
 .image {
+  display: inline-block;
+  margin-bottom: 0.5rem;
   object-fit: cover;
   width: 250px;
   height: 300px;
+  overflow: hidden;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  overflow: hidden;
 }
 
 .flex{

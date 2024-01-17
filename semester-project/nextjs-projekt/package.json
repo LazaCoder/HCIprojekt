@@ -7,10 +7,16 @@
     "export": "next export"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "classnames": "^2.5.1",
     "contentful": "^10.6.16",
+    "install": "^0.13.0",
     "lightbox.js-react": "^0.9.9",
     "next": "latest",
     "node-fetch": "^3.3.2",
+    "npm": "^10.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sharp": "^0.33.2",

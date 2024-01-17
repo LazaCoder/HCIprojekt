@@ -1,6 +1,7 @@
 // components/BlogGrid.js
 
-import styles from '../../styles/BlogGrid.module.css'; // adjust the path as necessary
+import styles from '../../styles/BlogGrid.module.css'; 
+import Link from 'next/link';
 
 const BlogGrid = ({ posts }) => {
 
@@ -12,13 +13,16 @@ const BlogGrid = ({ posts }) => {
   return (
     <div className={styles.grid}>
       {posts.map((post, index) => (
-        <div key={index} className={styles.card}>
+
+
+        
+        <Link href={`/post/id`} key={index} className={styles.card}>
           <img src={post.imageUrl} alt={post.title} className={styles.image} />
           <div className={styles.flex}>
           <div className={styles.title}>{post.title}</div>
           <div className={styles.rule}></div>
            </div>
-        </div>
+        </Link>
       ))}
     </div>
   );

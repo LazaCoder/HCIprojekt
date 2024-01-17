@@ -1,6 +1,7 @@
 // components/Sidebar.js
 
-import styles from '../../styles/Sidebar.module.css'; // adjust the path as necessary
+import styles from '../../styles/Sidebar.module.css';
+import Link from 'next/link';
 
 const Sidebar = ({ stories }) => {
 
@@ -20,13 +21,13 @@ const Sidebar = ({ stories }) => {
       <div className={styles.newStories}>
         <h3 className={styles.heading}>New Stories</h3>
         {stories.map((story, index) => (
-          <div key={index} className={styles.story}>
+          <Link href={`/blog/id`} key={index} className={styles.story}>
             <img src={story.imageUrl} alt={story.title} className={styles.storyImage} />
            <div> 
             <div className={styles.storyTitle}>{story.title}</div> 
             <div className={styles.rule}></div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </aside>
