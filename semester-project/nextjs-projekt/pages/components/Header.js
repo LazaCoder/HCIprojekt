@@ -3,10 +3,11 @@ import Link from 'next/link';
 import styles from '../../styles/Header.module.css';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
+import { FaBars } from 'react-icons/fa';
 
 function Header() {
 
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -21,10 +22,7 @@ function Header() {
 
   return (
     <div className={styles.header}>
-
-
-
-
+    <div className={styles.styled}>  <FaBars  /> </div>
         <Link href="/" passHref>
           <div className={getNavItemStyle('/')}>Home</div>
         </Link>

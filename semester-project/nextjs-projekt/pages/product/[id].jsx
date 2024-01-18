@@ -16,6 +16,7 @@ import "yet-another-react-lightbox/styles.css";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/captions.css";
 import Captions from "yet-another-react-lightbox/plugins/captions";
+import classNames from 'classnames';
 
 function ProductPage() {
   const router = useRouter();
@@ -106,6 +107,7 @@ function ProductPage() {
 
   return (
     <div>
+      
           <Lightbox
         open={lightboxOpen}
         styles={{ container: { backgroundColor: "rgba(0, 0, 0, .96)" },  container: { fontFamily: "'Zilla Slab', serif" } }}
@@ -131,7 +133,13 @@ function ProductPage() {
       <main className={styles.main}>
         <div className={styles.productContainer}>
           <img src={"https:" + product.image.fields.file.url} alt={product.name} className={styles.productImage} onClick={() => setLightboxOpen(true)} />
+          <div className={classNames(styles.smallImagesContainer,styles.mobileOnly)}>
+            <img src="/christmasTree1.png" alt="small christmas tree" className={styles.smallImage} />
+            <img src="/christmasTree2.png" alt="small christmas tree" className={styles.smallImage} />
+            <img src="/christmasTree3.png" alt="small christmas tree" className={styles.smallImage} />
+          </div>
           <div className={styles.productDetails}>
+          
             <h1 className={styles.productTitle}>{product.name}</h1>
 
             <div className={styles.priceAndRating}> 
@@ -141,6 +149,7 @@ function ProductPage() {
                 
             </div>
             </div>
+          
             <p className={styles.productDescription}>
           {isFullDescriptionShown ? product.description.content[0].content[0].value : getShortDescription(product.description.content[0].content[0].value)}
         </p>
@@ -160,7 +169,7 @@ function ProductPage() {
             </div>
             </div>
             {!isFullDescriptionShown && (
-          <div className={styles.smallImagesContainer}>
+          <div className={ classNames( styles.smallImagesContainer,styles.webOnly)}>
             <img src="/christmasTree1.png" alt="small christmas tree" className={styles.smallImage} />
             <img src="/christmasTree2.png" alt="small christmas tree" className={styles.smallImage} />
             <img src="/christmasTree3.png" alt="small christmas tree" className={styles.smallImage} />

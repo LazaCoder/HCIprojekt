@@ -75,3 +75,22 @@ margin-bottom: 3%;
   font-family: 'Zilla Slab', serif;
   font-weight: 600;
 }
+
+@media (max-width: 768px) {
+
+
+  .productGrid{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttonDown{
+font-size: 1.3rem;
+width: 50%;
+margin-top: 50px;
+
+  }
+
+
+}

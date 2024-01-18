@@ -400,6 +400,8 @@ color: inherit;
 
   .grid{
    grid-template-columns: 1fr;
+   margin-top: 0.5rem;
+   gap: 1.5rem;
 
   }
 
@@ -429,6 +431,22 @@ color: inherit;
 
   .newsletterSection {
     padding: 20px 10px; /* Adjust padding */
+    
+  }
+
+  .newsletterTitle {
+    font-size: 1.3rem;
+    
+  }
+
+  .emailInput:focus {
+    outline: none;
+    border: 2px solid; 
+     
+    border-color: black;
+    font-size: 0.7rem;
+    width: 50%; /* Full width with some margin */
+    margin-bottom: 10px; /* Space between stacked elements */
   }
 
   .newsletterForm {
@@ -438,8 +456,10 @@ color: inherit;
 
   .emailInput,
   .subscribeButton {
-    width: 90%; /* Full width with some margin */
+    font-size: 0.7rem;
+    width: 50%; /* Full width with some margin */
     margin-bottom: 10px; /* Space between stacked elements */
+    border-radius: 0px;
   }
 
   .footer {
