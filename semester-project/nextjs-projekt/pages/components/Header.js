@@ -86,7 +86,7 @@ function Header() {
           <div>Home</div>
         </Link>
         <Link className={styles.bmItemList} href="/new-in" passHref>
-          <div>Sho</div>
+          <div>Shop</div>
         </Link>
         <Link  className={styles.bmItemList} href="/shop" passHref>
           <div >Christmas</div>
