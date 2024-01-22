@@ -19,7 +19,7 @@
   flex-direction: column;
   row-gap: 200px;
   background-image: url('/chair.jpeg'); 
-  background-size: 100% 100%;
+  background-size: 100% 115%;
   background-position:center;
   height: 100%;
 }
@@ -359,7 +359,7 @@ color: inherit;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    background-size: 110% 110%;
+    background-size: 100% 110%;
     row-gap: 1rem;
     
    

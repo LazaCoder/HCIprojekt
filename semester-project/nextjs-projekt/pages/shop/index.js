@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import styles from "../../styles/Shop.module.css";
 import ProductGrid from "../components/ProductGrid";
 import Head from "next/head";
+import ChristmasProductGrid from "../components/ChristmasProductGrid";
 
 function Shop() {
   return (
@@ -19,7 +20,7 @@ function Shop() {
       </main>
              
       </div>
-      <ProductGrid/>
+      <ChristmasProductGrid/>
       <Footer/>
     </div>
   );

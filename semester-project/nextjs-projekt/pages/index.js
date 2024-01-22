@@ -12,7 +12,7 @@ function HomePage() {
   const categoriesRef = useRef(null);
   const categories = [
     { title: 'Bedroom', imageUrl: '/category_1.webp', linkHref: '/living-room' },
-    { title: 'Toilet', imageUrl: '/category_2.webp', linkHref: '/bedroom' },
+    { title: 'Bathroom', imageUrl: '/category_2.webp', linkHref: '/bedroom' },
     { title: 'Outdoor', imageUrl: '/category_3.webp', linkHref: '/bedroom' },
     { title: 'Kitchen', imageUrl: '/category_4.webp', linkHref: '/bedroom' },
     { title: 'Dining Room', imageUrl: '/category_5.webp', linkHref: '/bedroom' },

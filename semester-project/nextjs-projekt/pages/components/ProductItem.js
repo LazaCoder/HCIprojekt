@@ -19,14 +19,16 @@ function ProductItem({ product }) {
                 width={15} // Set the size of your star images
                 height={15}
                 key={i}
-            
+                priority={true}
+                
             />
         );
     }
 
     return (
         <div className={styles.productItem}>
-            <img src={"https:" + product.image.fields.file.url} alt={product.name} className={styles.image} loading="eager"/>
+            <Image src={"https:" + product.image.fields.file.url} alt={product.name} className={styles.image} priority={true} width={250}
+  height= {300}/>
             <h3 className={styles.title}>{product.name}</h3>
             <div className={styles.flex}>
                 <p className={styles.price}>{product.price}</p>
