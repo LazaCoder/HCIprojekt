@@ -109,10 +109,10 @@ function Header() {
           <div className={getNavItemStyle('/')}>Home</div>
         </Link>
         <Link href="/new-in" passHref>
-          <div className={getNavItemStyle('/new-in')}>Christmas </div>
+          <div className={getNavItemStyle('/new-in')}>Shop </div>
         </Link>
         <Link href="/shop" passHref>
-          <div className={getNavItemStyle('/shop')}>Shop</div>
+          <div className={getNavItemStyle('/shop')}>Christmas</div>
         </Link>
         <Link href="/inspiration" passHref>
           <div className={getNavItemStyle('/inspiration')}>Inspiration</div>
