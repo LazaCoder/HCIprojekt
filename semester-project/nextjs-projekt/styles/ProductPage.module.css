@@ -10,10 +10,7 @@
     font-weight: bold;
   }
 
-  .productImage:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-  }
+
 
   .header{
    height: 100%;
@@ -75,8 +72,10 @@
   .productDetails {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     padding-top:2rem;
     font-weight: 500;
+    height: 100%;
     
   }
   
@@ -84,6 +83,7 @@
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: bold;
+    justify-self: start;
   }
   
   .productPrice {
@@ -96,6 +96,7 @@
     font-weight: normal;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
+    justify-self: flex-start;
   }
 
   .flex{
@@ -108,9 +109,10 @@ gap: 2rem;
 
   .smallImagesContainer{
    display: flex;
-   margin-top: 6.8rem;
+
    gap: 1rem;
-   margin-top: 15.3rem;
+
+   margin-top: auto;
     
 
 
@@ -118,7 +120,7 @@ gap: 2rem;
 
   .smallImage{
     width: 25%;
-    height: 25%;
+    height: 100%;
     object-fit: cover;
 
   }
@@ -257,44 +259,50 @@ gap: 2rem;
     .productContainer {
       grid-template-columns: 1fr;
     }
+
+
+    .recommendedSection {
+      margin-top: 2rem; 
+    }
+  
+    .smallImagesContainer{
+      display: flex;
+     margin-top: 0;
+     align-items: center;
+     margin-bottom: 0;
+     
+     margin-right: 0;
+     justify-content: center;
+     
+   
+   
+     }
+  
+     .webOnly{
+      display: none;
+     }
+  
+  
+     .productDetails{
+  
+      margin: 0;
+      align-items: flex-start;
+     }
+  
+    .small{
+  
+      font-size: 0.75rem;
+      width: 20%;
+    }
+    
+
+
   }
   
-  .recommendedSection {
-    margin-top: 2rem; 
-  }
-
-  .smallImagesContainer{
-    display: flex;
-   margin-top: 0;
-   align-items: center;
-   margin-bottom: 0;
-   
-   margin-right: 0;
-   justify-content: center;
-   
- 
- 
-   }
-
-   .webOnly{
-    display: none;
-   }
-
-
-   .productDetails{
-
-    margin: 0;
-    align-items: flex-start;
-   }
-
-  .small{
-
-    font-size: 0.75rem;
-    width: 20%;
-  }
   
   .recommendedTitle {
-    font-size: 2rem;
+    margin-top: 4rem;
+    font-size: 1.8rem;
     text-align: left;
     margin-bottom: 2rem;
   }

@@ -137,6 +137,7 @@ function ProductPage() {
             <img src="/christmasTree1.png" alt="small christmas tree" className={styles.smallImage} />
             <img src="/christmasTree2.png" alt="small christmas tree" className={styles.smallImage} />
             <img src="/christmasTree3.png" alt="small christmas tree" className={styles.smallImage} />
+            <img src="/christmasTree3.png" alt="small christmas tree" className={styles.smallImage} />
           </div>
           <div className={styles.productDetails}>
           

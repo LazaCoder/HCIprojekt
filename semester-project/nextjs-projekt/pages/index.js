@@ -11,12 +11,14 @@ import { useRef,useState } from 'react';
 function HomePage() {
   const categoriesRef = useRef(null);
   const categories = [
-    { title: 'Living Room', imageUrl: '/category_1.webp', linkHref: '/living-room' },
-    { title: 'Bedroom', imageUrl: '/category_2.webp', linkHref: '/bedroom' },
-    { title: 'Kitchen', imageUrl: '/category_3.webp', linkHref: '/bedroom' },
-    { title: 'Toilet', imageUrl: '/category_4.webp', linkHref: '/bedroom' },
-    { title: 'Gym', imageUrl: '/category_5.webp', linkHref: '/bedroom' },
-    { title: 'Garden', imageUrl: '/category.webp', linkHref: '/bedroom' },
+    { title: 'Bedroom', imageUrl: '/category_1.webp', linkHref: '/living-room' },
+    { title: 'Toilet', imageUrl: '/category_2.webp', linkHref: '/bedroom' },
+    { title: 'Outdoor', imageUrl: '/category_3.webp', linkHref: '/bedroom' },
+    { title: 'Kitchen', imageUrl: '/category_4.webp', linkHref: '/bedroom' },
+    { title: 'Dining Room', imageUrl: '/category_5.webp', linkHref: '/bedroom' },
+    { title: 'Living Room', imageUrl: '/category.webp', linkHref: '/bedroom' },
+    { title: 'Small Decoratives', imageUrl: '/category_8.png', linkHref: '/bedroom' },
+    { title: 'Glass Decoratives', imageUrl: '/category_11.png', linkHref: '/bedroom' }
   ];
 
   // New state for the email
@@ -72,7 +74,7 @@ function HomePage() {
       </div>
     <div className={styles.colored}>
     <div className={styles.grid} ref={categoriesRef}>
-      {categories.map(category => (
+      { categories.map(category => (
        <div className={styles.element}> <CategoryCard key={category.title} title={category.title} imageUrl={category.imageUrl} linkHref={category.linkHref} /> </div>
       ))}
     </div>
