@@ -67,9 +67,15 @@
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     font-size: 1.3em;
-    
+    transition: background-color 0.3s, color 0.3s;
     font-family: 'Zilla Slab', serif;
     font-weight: 500;
+  }
+
+  .searchButton:hover{
+    background-color: black;
+    color: white;
+
   }
 
   @media (max-width: 768px) {
@@ -85,6 +91,12 @@
     .searchButton{
       font-size: 1rem;
 
+
+    }
+
+    .searchButton:hover{
+      background-color: black;
+      color: white;
 
     }
 

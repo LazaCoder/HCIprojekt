@@ -79,54 +79,9 @@ function ProductGrid() {
 
   return (
     <div className={styles.aligned}>
-      <div className={styles.buttons}>
-        
-      
-        {showMenu && (
-          <div className={styles.dropdown}>
-            <div className={styles.dropdownContent}>
-              {categories.map(category => (
-                <div key={category} className={styles.dropdownItem}>
-                  <label>
-                    <input
-                      type="checkbox"
-                      checked={selectedCategories.has(category)}
-                      onChange={() => handleCategoryChange(category)}
-                    />
-                    {category}
-                  </label>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-         
-        <button className={styles.sbutton} onClick={toggleSortMenu}>Sort</button>
-
-        {showSortMenu && (
-  <div className={styles.sdropdown}>
-    <div className={styles.dropdownContent}>
-      <div className={styles.dropdownItem} onClick={() => handleSortChange('name')}>
-        Sort by Name
-      </div>
-
-      <div className={styles.dropdownItem} onClick={() => handleSortChange('rating')}>
-        Sort by Rating
-      </div>
-
-      <div className={styles.dropdownItem} onClick={() => handleSortChange('price')}>
-        Sort by Price
-      </div>
-
-      
-    </div>
-  </div>
-)}
+    
 
 
-
-
-      </div>
       <div className={styles.productGrid}>
         {products.map(product => (
           <Link href={`/product/${product.sys.id}`} key={product.fields.id} passHref>

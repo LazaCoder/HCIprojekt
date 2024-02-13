@@ -1,6 +1,6 @@
 .blogPost {
     background: #ffffff;
-   
+
     margin-top: 3rem;
    align-self: center;
    display: flex;
@@ -76,6 +76,7 @@
     align-self: flex-start;
     padding-right: 13rem;
     white-space: pre-line;
+    
   }
   
   .postFooter {
@@ -90,3 +91,42 @@
   .author {
     color: #959595;
   }
+
+
+  @media (max-width: 768px) {
+  
+    .desktopOnly{
+     display: none;
+    }
+
+    .content{
+      align-self: flex-start;
+      padding-left: 0rem;
+      text-align: center;
+  
+    }
+
+    .postTitle{
+      padding: 2rem;
+    }
+
+    .postContent{
+      padding-right: 0rem;
+      padding: 2rem;
+    }
+
+    .imageContainer{
+      padding: 0;
+      width: 25rem;
+      height: 25rem;
+    }
+ 
+    
+
+    .postFooter{
+      margin-top: 0;
+      padding-right: 5rem;
+    }
+   
+ 
+   }

@@ -98,7 +98,7 @@ function ProductPage() {
   };
 
   const handleIncrement = () => {
-    setQuantity(prevQuantity => prevQuantity + 1);
+    setQuantity(prevQuantity => prevQuantity < 9 ? prevQuantity + 1 : 9);
   };
 
 

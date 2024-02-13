@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const CategoryCard = ({ title, imageUrl, linkHref }) => {
   return (
-    <Link className={styles.card} style={{ backgroundImage: `url(${imageUrl})` }} href={`${imageUrl}`}>
+    <Link className={styles.card} style={{ backgroundImage: `url(${imageUrl})` }} href={'/new-in'}>
       <h2 className={styles.title}>{title}</h2>
       <div  className={styles.link}>Shop Now</div>
     </Link>
