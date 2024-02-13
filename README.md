@@ -28,5 +28,10 @@ Kratki opis tijeka razvoja projekta
 * Manje dizajn promjene
 * Popravljanje bugova
 
+## 25.1.2024 (četvrti tjedan 2024.)
+* Rješavanje bugova
+
+## 10.2.2024
+* Uz savjet profesora popravljanje određenih dizajnerskih grešaka
 
 ![Frame 28](https://github.com/LazaCoder/HCIprojekt/assets/134958421/3603581a-abfb-4a90-a948-03dfe5f82aaa)
