@@ -50,6 +50,18 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+
+  .searchIcon{
+    position: absolute;
+    top: 50%;
+    right: 4rem;
+    transform: translateY(-50%);
+    height: 2rem; /* Size of the icon */
+    width: 2rem; /* Size of the icon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   .story {
     display: flex;

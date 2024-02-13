@@ -13,10 +13,8 @@ const BlogGrid = ({ posts }) => {
   return (
     <div className={styles.grid}>
       {posts.map((post, index) => (
-
-
         
-        <Link href={`/post/id`} key={index} className={styles.card}>
+        <Link href={`inspiration/blog/${post.id}`} key={index} className={styles.card}>
           <img src={post.imageUrl} alt={post.title} className={styles.image} />
           <div className={styles.flex}>
           <div className={styles.title}>{post.title}</div>

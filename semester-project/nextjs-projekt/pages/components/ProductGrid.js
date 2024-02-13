@@ -10,6 +10,8 @@ function ProductGrid() {
   const [showMenu, setShowMenu] = useState(false);
   const [showSortMenu, setShowSortMenu] = useState(false);
   const [sortCriterion, setSortCriterion] = useState('');
+  
+
 
 
   useEffect(() => {
@@ -82,11 +84,12 @@ function ProductGrid() {
   return (
     <div className={styles.aligned}>
       <div className={styles.buttons}>
-        <button className={styles.button} onClick={toggleMenu}>Filter</button>
+        
+        <button className={styles.button} onMouseEnter={toggleMenu}>Filter</button>
       
         {showMenu && (
           <div className={styles.dropdown}>
-            <div className={styles.dropdownContent}>
+            <div className={styles.dropdownContent} onMouseLeave={toggleMenu}>
               {categories.map(category => (
                 <div key={category} className={styles.dropdownItem}>
                   <label>
@@ -103,11 +106,11 @@ function ProductGrid() {
           </div>
         )}
          
-        <button className={styles.sbutton} onClick={toggleSortMenu}>Sort</button>
+        <button className={styles.sbutton} onMouseEnter={toggleSortMenu}>Sort</button>
 
         {showSortMenu && (
   <div className={styles.sdropdown}>
-    <div className={styles.dropdownContent}>
+    <div className={styles.dropdownContent} onMouseLeave={toggleSortMenu}>
       <div className={styles.dropdownItem} onClick={() => handleSortChange('name')}>
         Sort by Name
       </div>

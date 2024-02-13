@@ -8,6 +8,7 @@ import styles from '../../styles/Blog.module.css';
 import client from '../api/contentfulClient'; 
 import Sidebar from '../components/Sidebar';
 
+
 export default function Blog() {
   const [posts, setPosts] = useState([]);
 
@@ -20,7 +21,8 @@ export default function Blog() {
           imageUrl: item.fields.image.fields.file.url, 
           writer: item.fields.writer,
           dateCreated: item.fields.dateCreated,
-          text: item.fields.text
+          text: item.fields.text,
+          id: item.sys.id
         };
       });
       setPosts(fetchedPosts);

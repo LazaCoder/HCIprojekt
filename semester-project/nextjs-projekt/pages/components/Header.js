@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import styles from '../../styles/Header.module.css';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import classNames from 'classnames';
 import { slide as Menu } from 'react-burger-menu';
@@ -10,13 +10,22 @@ import { FaTimes } from 'react-icons/fa';
 
 function Header() {
 
+  const router=useRouter();
+
+  useEffect(() => {
+    if (router.isReady) {
+      const currentPath = router.pathname;
+  
+    }
+  }, [router.isReady, router.query]);
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(state => !state);
   };
 
-  const router = useRouter();
+  
 
   const fullScreenStyles = {
 
@@ -69,8 +78,30 @@ function Header() {
 
   // Function to apply active styles based on the current route
   const getNavItemStyle = (path) => {
-    return router.pathname === path ? styles.navItemActive : styles.navItem;
+    if( router.pathname.includes(path)) {
+
+      return styles.navItemActive
+    } else { 
+      return styles.navItem}
   };
+  
+
+  const getHomeItemStyle = (path) => {
+    if( router.pathname===path) {
+
+      return styles.navItemActive
+    } else { 
+      return styles.navItem}
+  };
+  
+  const getProductItemStyle = (path) => {
+    if( router.pathname===path || router.pathname.includes( "product")) {
+
+      return styles.navItemActive
+    } else { 
+      return styles.navItem}
+  };
+
 
   return (
     <div className={styles.header}>
@@ -106,10 +137,10 @@ function Header() {
        </div>
 
         <Link href="/" passHref>
-          <div className={getNavItemStyle('/')}>Home</div>
+          <div className={getHomeItemStyle('/')}>Home</div>
         </Link>
         <Link href="/new-in" passHref>
-          <div className={getNavItemStyle('/new-in')}>Shop </div>
+          <div className={getProductItemStyle('/new-in')}>Shop </div>
         </Link>
         <Link href="/shop" passHref>
           <div className={getNavItemStyle('/shop')}>Christmas</div>
