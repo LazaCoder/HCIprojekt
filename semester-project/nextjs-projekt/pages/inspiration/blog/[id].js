@@ -8,6 +8,7 @@ import client from '../../api/contentfulClient';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import classNames from 'classnames';
 
 
 // Dummy data for the blog post
@@ -77,7 +78,7 @@ const BlogPage = () => {
         <div className={styles.con}>
         <BlogPost post={post} />
         </div>
-        <Sidebar className={styles.sidebar} stories={posts} />
+        <Sidebar className={classNames(styles.sidebar,styles.desktopOnly)} stories={posts} />
       </div>
       <Footer />
     </div>
