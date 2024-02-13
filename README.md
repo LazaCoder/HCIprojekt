@@ -1,7 +1,6 @@
 # Linkovi
 Link deploya: https://homedecoresite.netlify.app  
-Link izvješća na Notionu: [https://glamorous-kumquat656.notion.site/HCI-HOME-DECOR-03a611673a4b4cd9a932e4bc4ca7d384](https://glamorous-kumquat-656.notion.site/HCI-HOME-DECOR-03a611673a4b4cd9a932e4bc4ca7d384?pvs=4)
-
+Link izvješća na Notionu: https://glamorous-kumquat-656.notion.site/HCI-HOME-DECOR-03a611673a4b4cd9a932e4bc4ca7d384?pvs=4
 
 
 
