@@ -3,10 +3,14 @@ import Header from './components/Header'; // Make sure the path is correct
 import Footer from './components/Footer'; // Make sure the path is correct
 import Link from 'next/link';
 import styles from '../styles/404.module.css'; // Make sure to create this CSS module and import it
+import Head from 'next/head';
 
 export default function Custom404() {
   return (
 <>
+   <Head>
+    <title>Not Found</title>
+   </Head>
     <div className={styles.header}>
     <Header />
     </div>

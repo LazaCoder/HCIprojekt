@@ -68,6 +68,9 @@ const BlogPage = () => {
 
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Blog Post</title>
+      </Head>
       <div className={styles.header}><Header /></div>
       <div className={styles.blogLayout}>
         <div className={styles.con}>

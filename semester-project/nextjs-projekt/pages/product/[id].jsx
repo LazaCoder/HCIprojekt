@@ -17,6 +17,7 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/captions.css";
 import Captions from "yet-another-react-lightbox/plugins/captions";
 import classNames from 'classnames';
+import Head from 'next/head';
 
 function ProductPage() {
   const router = useRouter();
@@ -105,8 +106,13 @@ function ProductPage() {
     
   }
 
+  
+
   return (
     <div>
+      <Head>
+        <title>Product</title>
+      </Head>
       
           <Lightbox
         open={lightboxOpen}
