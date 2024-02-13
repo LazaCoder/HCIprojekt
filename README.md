@@ -33,4 +33,7 @@ Kratki opis tijeka razvoja projekta
 ## 10.2.2024
 * Uz savjet profesora popravljanje određenih dizajnerskih grešaka
 
+
+# Meme
+
 ![Frame 28](https://github.com/LazaCoder/HCIprojekt/assets/134958421/3603581a-abfb-4a90-a948-03dfe5f82aaa)
