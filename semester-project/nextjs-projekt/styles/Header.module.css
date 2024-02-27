@@ -12,8 +12,12 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: -1%;
+  overflow: hidden;
 }
 
+.hidden{
+  display: none;
+}
 
 
 
@@ -58,9 +62,10 @@ color: black;
 
 .logoContainer {
    /* This will push the logo container to the right */
-  padding-right: 1rem; /* You can adjust this to increase the space from the right edge */
+   /* You can adjust this to increase the space from the right edge */
   align-self:flex-end;
   align-items: flex-end;
+  justify-self: flex-start;
 }
 
 .mobileOnly{
@@ -101,7 +106,6 @@ color: black;
     display: block; /* Show when the menu is toggled */
     position: absolute;
     width: 100%;
-     /* Adjust to your header's height */
     left: 0;
     background: white;
     border-top: 1px solid #ccc;

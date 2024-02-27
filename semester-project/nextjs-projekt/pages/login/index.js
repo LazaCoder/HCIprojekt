@@ -1,75 +1,51 @@
-import React, { useState } from 'react';
-import { useRouter } from 'next/router';
-import { useUser } from '../../contexts/UserContext'; // Adjust the import path as needed
-import styles from '../../styles/Auth.module.css'; 
+// pages/login.js
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../../styles/Login.module.css'; // Assuming you'll create a separate CSS module file
 
-
-
-function LoginPage() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const router = useRouter();
-  const { setIsLoggedIn } = useUser(); // Use the setIsLoggedIn function from UserContext
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    try {
-      const response = await fetch('/api/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ username, password }),
-      });
-      const data = await response.json();
-
-      if (response.ok) {
-        console.log('Login successful:', data);
-
-        // Update the logged-in state and set localStorage
-        setIsLoggedIn(true);
-        localStorage.setItem('isLoggedIn', 'true');
-
-        // Redirect to the home page
-        router.push('/');
-      } else {
-        console.log('Login failed:', data.message);
-        // Optionally handle login failure (e.g., show an error message)
-      }
-    } catch (error) {
-      console.error('An error occurred:', error);
-      // Optionally handle the error (e.g., show an error message)
-    }
-  };
-
+export default function Login() {
   return (
-    <div className={styles.authContainer}>
-      <h2 className={styles.authTitle}>Login</h2>
-      <form onSubmit={handleSubmit} className={styles.authForm}>
-        <div>
-          <label htmlFor="username">Korisničko ime:</label>
-          <input
-            type="text"
-            id="username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            className={styles.authInput}
-          />
+    <div className={styles.container}>
+      <Head>
+        <title>Login Page</title>
+      </Head>
+      
+
+     
+
+      <div className={styles.loginContainer}>
+        
+      <div className={styles.logo}>
+         
+         <Image src="/logo.png" alt="HCI Home Decor" width={150} height={150} />
+       </div>
+
+        <h1 className={styles.title}>Login to Your Account</h1>
+
+        <form className={styles.loginForm}>
+          <label htmlFor="email" className={styles.label}>Email</label>
+          <input type="email" id="email" name="email" className={styles.inputField} required />
+
+          <label htmlFor="password" className={styles.label}>Password</label>
+          <input type="password" id="password" name="password"  className={styles.inputField} required />
+
+          <a href="#" className={styles.forgotPassword}>Forgot your password?</a>
+          <button type="submit">Sign In</button>
+        </form>
+
+        <div className={styles.signupPrompt}>
+          <p>New Here?</p>
+          <p>Sign up and discover a brand new world of modern home design.</p>
+          <button type="button">Sign Up</button>
         </div>
-        <div>
-          <label htmlFor="password">Lozinka:</label>
-          <input
-            type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className={styles.authInput}
-          />
+      </div>
+
+      <div className={styles.imageContainer}>
+        
+        <div className={styles.shadowWrapper}>
+        <Image src="/interior.png" alt="Interior" layout='fill' objectFit='cover' className={styles.image} />
         </div>
-        <button type="submit" className={styles.authButton}>Prijavi se</button>
-      </form>
+      </div>
     </div>
   );
 }
-
-export default LoginPage;

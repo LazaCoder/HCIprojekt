@@ -8,6 +8,7 @@ import classNames from 'classnames';
 import { slide as Menu } from 'react-burger-menu';
 import { FaTimes } from 'react-icons/fa';
 
+
 function Header() {
 
   const router=useRouter();
@@ -105,6 +106,8 @@ function Header() {
 
   return (
     <div className={styles.header}>
+      <div className={styles.logoContainer}> <img src="/logo.png" alt="HCI Home Decor" className={styles.logo} /> </div>
+       
     <div className={classNames(styles.styled,styles.mobileOnly)}> <FaBars  onClick={toggleMenu}/> </div>
        <div className={styles.mobileOnly}>
   
@@ -117,9 +120,9 @@ function Header() {
           <div>Home</div>
         </Link>
         <Link className={styles.bmItemList} href="/new-in" passHref>
-          <div>Shop</div>
+          <div>Shop</div>   
         </Link>
-        <Link  className={styles.bmItemList} href="/shop" passHref>
+        <Link  className={classNames(styles.bmItemList, styles.hidden)} href="/shop" passHref>
           <div >Christmas</div>
         </Link>
         <Link className={styles.bmItemList}  href="/inspiration" passHref>
@@ -142,9 +145,9 @@ function Header() {
         <Link href="/new-in" passHref>
           <div className={getProductItemStyle('/new-in')}>Shop </div>
         </Link>
-        <Link href="/shop" passHref>
+        {/* <Link href="/shop" passHref>
           <div className={getNavItemStyle('/shop')}>Christmas</div>
-        </Link>
+        </Link> */}
         <Link href="/inspiration" passHref>
           <div className={getNavItemStyle('/inspiration')}>Inspiration</div>
         </Link>
@@ -152,8 +155,8 @@ function Header() {
           <div className={getNavItemStyle('/inquiry')}>Inquiry</div>
         </Link>
 
-       <div> <img src="/logo.png" alt="HCI Home Decor" className={styles.logo} /> </div>
-
+      
+        
       
     </div>
   );

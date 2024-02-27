@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #B5BEC7;
+    font-family: 'Zilla Slab', serif;
+  }
+  
+  .loginContainer {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 1rem;
+    align-self: center;
+    box-shadow: 10px 0 20px -2px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+  }
+
+  .inputField{
+    background: transparent;
+    outline: none !important;
+    outline-style: none !important;
+    border-radius: 0 !important;
+    border: none !important;
+    border-bottom: 2px solid red !important;
+    border-color: black !important;
+    width: 24rem;
+  }
+
+
+  
+
+  .label{
+    color: black;
+  background: transparent;
+    font-family: 'Zilla Slab', serif;
+    font-weight: bold;
+    font-size: x-large;
+
+
+  }
+  
+  .logo {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+  }
+  
+  .title {
+    
+    margin-bottom: 20px;
+   
+   font-size: 2.7rem;
+  }
+  
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .loginForm label {
+    margin-bottom: 5px;
+  }
+  
+  .loginForm input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .forgotPassword {
+    margin-bottom: 20px;
+    color: black;
+    text-decoration: underline;
+    font-size: large;
+  }
+  
+  .loginForm button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 8rem;
+    font-size: large;
+    font-family: 'Zilla Slab', serif;
+  }
+  
+  .signupPrompt {
+    text-align: center;
+    margin-top: 50px;
+    
+  }
+  
+  .signupPrompt p {
+    margin-bottom: 10px;
+  }
+  
+  .signupPrompt button {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .imageContainer {
+    flex: 1;
+    position: relative;
+    width: 50%;
+    height: 100%;
+  }
+
+  .shadowWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+  }
